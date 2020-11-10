@@ -9,7 +9,7 @@ This is a collection of reusable scripts, functions and [aliases](https://en.wik
 alias edit-bash-profile="code ~/.bash_profile"
 ```
 
-### Apply changes made in `.bash_profile` without reloading your terminal
+### Apply changes made in `.bash_profile` without restarting your terminal
 ```
 alias refresh-bash="source ~/.bash_profile"
 ```
