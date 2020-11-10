@@ -58,6 +58,15 @@ compile_typescript() {
 }
 ```
 
+### Find publicly known security vulnerabilities in a website's frontend JavaScript libraries using Snyk
+
+```
+run_snyk_check() {
+  echo "Running Snyk check for website:" $1
+  npx is-website-vulnerable $1
+}
+```
+
 ### Run a local HTTP server
 
 ```
