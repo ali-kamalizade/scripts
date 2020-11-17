@@ -87,7 +87,31 @@ alias git-stash-single-file="git stash push "
 ### Print current branch name
 
 ```
-git rev-parse --abbrev-ref HEAD
+alias git-branch-name='git rev-parse --abbrev-ref HEAD'
+```
+
+### Amend staged files
+
+```
+alias git-ammend='git commit --amend'
+```
+
+### Undo last commit while keeping the changes
+
+```
+alias git-undo-last-commit='git reset --soft HEAD~1'
+```
+
+### Revert all local changes
+
+```
+alias git-revert-changes='git fetch --prune && git reset --hard'
+```
+
+### Checkout previous branch
+
+```
+alias git-previous-branch='git checkout -'
 ```
 
 ## Utilities / Miscellaneous
