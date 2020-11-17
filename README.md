@@ -14,13 +14,24 @@ alias edit-bash-profile="code ~/.bash_profile"
 alias refresh-bash="source ~/.bash_profile"
 ```
 
+### Execute a command multiple times
+
+```
+run_multiple_times() {
+  echo "Executing" "the following command" $1 "times:" $2
+  for i in $(seq 1 $1);
+    do $2;
+  done;
+}
+```
+
 ### Shortcut for home directory
 
 ```
 alias home="cd ~"
 ```
 
-## JavaScript
+## JavaScript & TypeScript
 
 ### List globally installed NPM packages
 
@@ -32,6 +43,12 @@ alias npm-global-packages="npm list -g --depth 0"
 
 ```
 alias tslint-fix=" npx tslint --fix --project ./"
+```
+
+### Generate a `tsconfig.json` file
+
+```
+alias tslint-fix=" npx tsc --init"
 ```
 
 ### Clear cache of Jest test runner
@@ -58,7 +75,7 @@ compile_typescript() {
 }
 ```
 
-### Find publicly known security vulnerabilities in a website's frontend JavaScript libraries using Snyk
+### Find publicly known security vulnerabilities in a website's frontend JavaScript libraries using [Snyk](https://snyk.io)
 
 ```
 run_snyk_check() {
