@@ -16,6 +16,14 @@ alias edit-bash-profile="code ~/.bash_profile"
 alias refresh-bash="source ~/.bash_profile"
 ```
 
+### View pretty-printed JSON response with `fx`
+
+```shell
+curl_json() {
+    curl $1 | npx fx
+}
+```
+
 ### Execute a command multiple times
 
 ```shell
