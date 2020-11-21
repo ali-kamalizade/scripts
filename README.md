@@ -1,4 +1,4 @@
-# Helpers to make my (and your?) life easier
+# Utilities to make my (and your?) life easier
 
 This is a collection of reusable scripts, functions and [aliases](https://en.wikipedia.org/wiki/Alias_(Mac_OS)) related to software development.
 
