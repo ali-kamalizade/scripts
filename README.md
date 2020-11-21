@@ -57,6 +57,12 @@ alias tslint-fix=" npx tsc --init"
 alias jest-clear-cache="npx jest --clearCache"
 ```
 
+### Start Jest in watch mode
+
+```
+alias jest-watch="npx jest --watch"
+```
+
 ### Check JavaScript bundles for ES5 compatibility
 
 ```
