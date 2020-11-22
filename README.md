@@ -182,3 +182,12 @@ medium_post_to_markdown() {
     npx mediumexporter "$1" > medium_post.md
 }
 ```
+
+### Execute a JAR file
+
+```shell
+run_jar() {
+    "Running the following JAR file: " $1
+    java -jar $1
+}
+```
