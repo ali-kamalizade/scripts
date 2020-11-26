@@ -49,6 +49,18 @@ run_multiple_times() {
 alias home="cd ~"
 ```
 
+### Say `please` and you shall receive
+
+```shell
+alias please="sudo"
+```
+
+### Rerun last command
+
+```shell
+alias rerun="!!"
+```
+
 ## JavaScript & TypeScript
 
 ### List globally installed NPM packages
