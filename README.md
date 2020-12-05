@@ -137,6 +137,14 @@ open_cypress() {
 }
 ```
 
+### Determine download stats for all the NPM packages by user
+
+```shell
+get_npm_download_stats() {
+    npx https://gist.github.com/kentcdodds/8eea6d7365f46ddd2f2760bb44d164c0 $1
+}
+```
+
 ## Git
 
 ### Stash single file
