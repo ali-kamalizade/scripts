@@ -61,6 +61,14 @@ alias please="sudo"
 alias rerun="!!"
 ```
 
+### Use rainbow
+
+```shell
+run_with_rainbow() {
+    $1 | npx lolcatjs
+}
+```
+
 ## JavaScript & TypeScript
 
 ### List globally installed NPM packages
