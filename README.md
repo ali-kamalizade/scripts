@@ -2,7 +2,7 @@
 
 This is a collection of reusable scripts, functions and [aliases](https://en.wikipedia.org/wiki/Alias_(Mac_OS)) related to software development.
 
-## Bash
+## Bash / Zsh
 
 ### Open `.bash_profile` in Visual Studio Code
 
@@ -14,6 +14,18 @@ alias edit-bash-profile="code ~/.bash_profile"
 
 ```shell
 alias refresh-bash="source ~/.bash_profile"
+```
+
+### Open `.zshrc` in Visual Studio Code
+
+```shell
+alias edit-zsh='code ~/.zshrc'
+```
+
+### Apply changes made in `.zshrc` without restarting your terminal
+
+```shell
+alias refresh-zsh='source ~/.zshrc'
 ```
 
 ### View pretty-printed JSON response using `fx`
