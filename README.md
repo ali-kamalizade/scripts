@@ -170,6 +170,13 @@ get_npm_download_stats() {
 }
 ```
 
+### Start server, test and terminate
+```shell
+start_server_and_test() {
+    npx start-server-and-test $1 $2 $3
+}
+```
+
 ## Git
 
 ### Stash single file
