@@ -2,7 +2,12 @@
 
 This is a collection of reusable scripts, functions and [aliases](https://en.wikipedia.org/wiki/Alias_(Mac_OS)) related to software development.
 
-## Bash / Zsh
+- [Bash & Zsh](#bash--zsh)
+- [JavaScript & TypeScript](#javascript--typescript)
+- [Git](#git)
+- [Utilities & Miscellaneous](#utilities--miscellaneous)
+
+## Bash & Zsh
 
 ### Open `.bash_profile` in Visual Studio Code
 
@@ -203,7 +208,7 @@ alias git-revert-changes='git fetch --prune && git reset --hard'
 alias git-previous-branch='git checkout -'
 ```
 
-## Utilities / Miscellaneous
+## Utilities & Miscellaneous
 
 ### Kill process running on a specific port
 
