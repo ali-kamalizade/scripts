@@ -181,7 +181,7 @@ start_server_and_test() {
 
 ```shell
 alias ng="npx ng"
-alias nx="npx ng"
+alias nx="npx nx"
 ```
 
 ## Git
