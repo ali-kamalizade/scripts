@@ -184,6 +184,14 @@ alias ng="npx ng"
 alias nx="npx nx"
 ```
 
+### Run accessibility tests on a provided page
+
+```shell
+test_website_a11y() {
+    npx pa11y $1
+}
+```
+
 ## Git
 
 ### Stash single file
