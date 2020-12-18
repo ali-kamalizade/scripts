@@ -238,6 +238,12 @@ alias git-revert-changes='git fetch --prune && git reset --hard'
 alias git-previous-branch='git checkout -'
 ```
 
+### Show contributors sorted by commits
+
+```shell
+alias git-contributors='git shortlog -sn --all'
+```
+
 ## Utilities & Miscellaneous
 
 ### Kill process running on a specific port
