@@ -86,6 +86,14 @@ run_with_rainbow() {
 }
 ```
 
+### Highlight syntax of a file
+
+```shell
+highlight_syntax() {
+    npx cli-highlight $1
+}
+```
+
 ## JavaScript & TypeScript
 
 ### List globally installed NPM packages
