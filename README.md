@@ -97,13 +97,13 @@ alias npm-global-packages="npm list -g --depth 0"
 ### Fix auto-fixable issues in TSLint
 
 ```shell
-alias tslint-fix=" npx tslint --fix --project ./"
+alias tslint-fix="npx tslint --fix --project ./"
 ```
 
 ### Generate a `tsconfig.json` file
 
 ```shell
-alias tslint-fix=" npx tsc --init"
+alias tslint-fix="npx tsc --init"
 ```
 
 ### Clear cache of Jest test runner
@@ -175,6 +175,13 @@ get_npm_download_stats() {
 start_server_and_test() {
     npx start-server-and-test $1 $2 $3
 }
+```
+
+### Invoke Angular CLI / nx.dev CLI if you don't have them installed globally
+
+```shell
+alias ng="npx ng"
+alias nx="npx ng"
 ```
 
 ## Git
