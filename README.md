@@ -103,7 +103,7 @@ alias tslint-fix="npx tslint --fix --project ./"
 ### Generate a `tsconfig.json` file
 
 ```shell
-alias tslint-fix="npx tsc --init"
+alias ts-init="npx tsc --init"
 ```
 
 ### Clear cache of Jest test runner
