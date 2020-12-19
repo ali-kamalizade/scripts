@@ -200,6 +200,12 @@ test_website_a11y() {
 }
 ```
 
+### Execute TypeScript code using `ts-node`
+
+```shell
+alias ts-node="npx ts-node"
+```
+
 ## Git
 
 ### Stash single file
