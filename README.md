@@ -3,7 +3,9 @@
 This is a collection of reusable scripts, functions and [aliases](https://en.wikipedia.org/wiki/Alias_(Mac_OS)) related to software development.
 
 - [Bash & Zsh](#bash--zsh)
-- [JavaScript & TypeScript](#javascript--typescript)
+- [JavaScript](#javascript)
+- [TypeScript](#typescript)
+- [Jest](#jest)
 - [Git](#git)
 - [Utilities & Miscellaneous](#utilities--miscellaneous)
 
@@ -94,42 +96,12 @@ highlight_syntax() {
 }
 ```
 
-## JavaScript & TypeScript
+## JavaScript
 
 ### List globally installed NPM packages
 
 ```shell
 alias npm-global-packages="npm list -g --depth 0"
-```
-
-### Fix auto-fixable issues in TSLint
-
-```shell
-alias tslint-fix="npx tslint --fix --project ./"
-```
-
-### Generate a `tsconfig.json` file
-
-```shell
-alias ts-init="npx tsc --init"
-```
-
-### Clear cache of Jest test runner
-
-```shell
-alias jest-clear-cache="npx jest --clearCache"
-```
-
-### Debug issues when using Jest test runner (e.g. when Jest is stuck and not logging the root issue)
-
-```shell
-alias jest-debug='npx jest -- --detectOpenHandles'
-```
-
-### Start Jest in watch mode
-
-```shell
-alias jest-watch="npx jest --watch"
 ```
 
 ### Check JavaScript bundles for ES5 compatibility
@@ -138,15 +110,6 @@ alias jest-watch="npx jest --watch"
 check_es_bundles() {
   echo "Checking bundles in" $1 "for ES5 compatibility."
   npx es-check es5 $1 --verbose
-}
-```
-
-### Compile TypeScript
-
-```shell
-compile_typescript() {
-  echo "Compiling TypeScript using the following configuration file:" $1
-  npx tsc -p $1
 }
 ```
 
@@ -206,10 +169,53 @@ test_website_a11y() {
 }
 ```
 
+## Jest
+
+### Clear cache of Jest test runner
+
+```shell
+alias jest-clear-cache="npx jest --clearCache"
+```
+
+### Debug issues when using Jest test runner (e.g. when Jest is stuck and not logging the root issue)
+
+```shell
+alias jest-debug='npx jest -- --detectOpenHandles'
+```
+
+### Start Jest in watch mode
+
+```shell
+alias jest-watch="npx jest --watch"
+```
+
+## TypeScript
+
+### Fix auto-fixable issues in TSLint
+
+```shell
+alias tslint-fix="npx tslint --fix --project ./"
+```
+
+### Generate a `tsconfig.json` file
+
+```shell
+alias ts-init="npx tsc --init"
+```
+
 ### Execute TypeScript code using `ts-node`
 
 ```shell
 alias ts-node="npx ts-node"
+```
+
+### Compile TypeScript
+
+```shell
+compile_typescript() {
+  echo "Compiling TypeScript using the following configuration file:" $1
+  npx tsc -p $1
+}
 ```
 
 ## Git
