@@ -180,7 +180,7 @@ alias jest-clear-cache="npx jest --clearCache"
 ### Debug issues when using Jest test runner (e.g. when Jest is stuck and not logging the root issue)
 
 ```shell
-alias jest-debug='npx jest -- --detectOpenHandles'
+alias jest-debug='npx jest --detectOpenHandles'
 ```
 
 ### Start Jest in watch mode
