@@ -268,6 +268,12 @@ alias git-previous-branch='git checkout -'
 alias git-contributors='git shortlog -sn --all'
 ```
 
+### Push with force to repository but do not overwrite changes on the remote branch which you don't have locally yet ([see here](https://stackoverflow.com/a/52823955/4743909))
+
+```shell
+alias git-safe-force-push='git push --force-with-lease'
+```
+
 ## Utilities & Miscellaneous
 
 ### Kill process running on a specific port
