@@ -169,6 +169,12 @@ test_website_a11y() {
 }
 ```
 
+### List browsers which are supported by your project (needs a [browerslist](https://github.com/browserslist/browserslist) file)
+
+```shell
+alias browserslist="npx browserslist"
+```
+
 ## Jest
 
 ### Clear cache of Jest test runner
