@@ -104,7 +104,7 @@ highlight_syntax() {
 alias npm-global-packages="npm list -g --depth 0"
 ```
 
-### Check JavaScript bundles for ES5 compatibility
+### Check JavaScript bundles for ES5 compatibility using [es-check](https://github.com/yowainwright/es-check)
 
 ```shell
 check_es_bundles() {
