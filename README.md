@@ -296,3 +296,9 @@ run_jar() {
     java -jar $1
 }
 ```
+
+### Fix "xcrun: error: invalid active developer path, missing xcrun" error (this can occur after a Mac OS update)
+
+```shell
+alias fix-macos-xcrun='xcode-select --install'
+```
