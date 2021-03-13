@@ -195,6 +195,15 @@ alias jest-debug='npx jest --detectOpenHandles'
 alias jest-watch="npx jest --watch"
 ```
 
+### Open Jest coverage report (run tests with `--coverage`)
+
+```shell
+open_jest_coverage_report() {
+    open ./coverage/lcov-report/index.html
+}
+
+```
+
 ## TypeScript
 
 ### Fix auto-fixable issues in TSLint
