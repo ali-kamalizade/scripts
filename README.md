@@ -247,6 +247,15 @@ alias git-stash-single-file="git stash push "
 alias git-branch-name='git rev-parse --abbrev-ref HEAD'
 ```
 
+### Remove committed file from Git version control but keep it locally
+
+```shell
+git_remove() {
+    "Removing the following file from version control (it's still available locally: " $1
+    git rm --cached $1
+}
+```
+
 ### Amend staged files
 
 ```shell
