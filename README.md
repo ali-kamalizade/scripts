@@ -188,7 +188,7 @@ alias browserslist="npx browserslist"
 ### Set the provided Node version as default using [nvm](https://github.com/nvm-sh/nvm)
 
 ```shell
-nvm_set_sefault() {
+nvm_set_default_version() {
     echo "Set the following version as default:" $1
     nvm alias default $1
 }
