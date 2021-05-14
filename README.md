@@ -161,6 +161,16 @@ alias ng="npx ng"
 alias nx="npx nx"
 ```
 
+### Update Angular to latest version
+
+```shell
+ng_update_to_latest() {
+    ng update @angular/cli --allow-dirty
+    ng update @angular/core --allow-dirty
+    ng update @angular/cdk --allow-dirty 
+}
+```
+
 ### Run accessibility tests on a provided page
 
 ```shell
@@ -173,6 +183,15 @@ test_website_a11y() {
 
 ```shell
 alias browserslist="npx browserslist"
+```
+
+### Set the provided Node version as default using [nvm](https://github.com/nvm-sh/nvm)
+
+```shell
+nvm_set_sefault() {
+    echo "Set the following version as default:" $1
+    nvm alias default $1
+}
 ```
 
 ## Jest
