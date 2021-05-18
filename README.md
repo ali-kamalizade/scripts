@@ -104,6 +104,12 @@ highlight_syntax() {
 alias npm-global-packages="npm list -g --depth 0"
 ```
 
+### Run security audit for Node projects (omit `--production` to consider `devDependencies` as well)
+
+```shell
+alias npm-audit-prod="npm audit --production"
+```
+
 ### Check JavaScript bundles for ES5 compatibility using [es-check](https://github.com/yowainwright/es-check)
 
 ```shell
