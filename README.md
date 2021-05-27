@@ -119,10 +119,19 @@ check_es_bundles() {
 }
 ```
 
+### Find publicly known security vulnerabilities in a GitHub project using [Snyk](https://snyk.io) (provide URL)
+
+```shell
+run_snyk_github_project_check() {
+  echo "Running Snyk check for GitHub project:" $1
+  npx snyk test $1
+}
+```
+
 ### Find publicly known security vulnerabilities in a website's frontend JavaScript libraries using [Snyk](https://snyk.io)
 
 ```shell
-run_snyk_check() {
+run_snyk_website_check() {
   echo "Running Snyk check for website:" $1
   npx is-website-vulnerable $1
 }
