@@ -194,6 +194,12 @@ test_website_a11y() {
 }
 ```
 
+### Format files using [Prettier](https://github.com/prettier/prettier) (must be installed in the current directory)
+
+```shell
+alias browserslist="prettier --write ."
+```
+
 ### List browsers which are supported by your project (needs a [browerslist](https://github.com/browserslist/browserslist) file)
 
 ```shell
