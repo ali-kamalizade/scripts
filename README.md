@@ -110,6 +110,12 @@ alias npm-global-packages="npm list -g --depth 0"
 alias npm-audit-prod="npm audit --production"
 ```
 
+### Find unused NPM dependencies using [depcheck](https://github.com/depcheck/depcheck)
+
+```shell
+alias npm-depcheck="$ npx depcheck"
+```
+
 ### Check JavaScript bundles for ES5 compatibility using [es-check](https://github.com/yowainwright/es-check)
 
 ```shell
