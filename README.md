@@ -305,7 +305,7 @@ git_remove() {
 ### Amend staged files
 
 ```shell
-alias git-ammend='git commit --amend'
+alias git-amend='git commit --amend'
 ```
 
 ### Undo last commit while keeping the changes
