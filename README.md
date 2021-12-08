@@ -221,6 +221,15 @@ nvm_set_default_version() {
 }
 ```
 
+### Use Node version based on `.node-version` file in a repository using [nvm](https://github.com/nvm-sh/nvm)
+
+```shell
+nvm-project-node-version(){
+    value=$(<.node-version)
+    nvm use "$value"
+} 
+```
+
 ## Jest
 
 ### Clear cache of Jest test runner
