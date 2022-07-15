@@ -349,6 +349,14 @@ alias git-safe-force-push='git push --force-with-lease'
 
 ## Utilities & Miscellaneous
 
+### Count lines of code
+
+```shell
+sloc() {
+  npx sloc -f cli-table $1
+}
+```
+
 ### Kill process running on a specific port
 
 ```shell
