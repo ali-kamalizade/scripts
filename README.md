@@ -230,6 +230,11 @@ nvm-project-node-version(){
 } 
 ```
 
+### Clear cache in `node_modules`
+```shell
+alias clear_node_modules_cache="rm -rf node_modules/.cache"
+```
+
 ## Jest
 
 ### Clear cache of Jest test runner
