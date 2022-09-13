@@ -266,10 +266,10 @@ open_jest_coverage_report() {
 
 ## TypeScript
 
-### Fix auto-fixable issues in TSLint
+### Find unused exports in your source files
 
 ```shell
-alias tslint-fix="npx tslint --fix --project ./"
+alias ts-dead-code="npx ts-prune -p ./tsconfig.json"
 ```
 
 ### Generate a `tsconfig.json` file
