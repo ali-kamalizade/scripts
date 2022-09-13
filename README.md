@@ -266,10 +266,10 @@ open_jest_coverage_report() {
 
 ## TypeScript
 
-### Find unused exports in your source files
+### Find unused exports in your source files (+ ignore exceptions)
 
 ```shell
-alias ts-dead-code="npx ts-prune -p ./tsconfig.json"
+alias ts-dead-code="npx ts-prune -p ./tsconfig.json | grep -v 'jest.config'"
 ```
 
 ### Generate a `tsconfig.json` file
