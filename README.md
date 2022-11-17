@@ -206,6 +206,14 @@ test_website_a11y() {
 alias browserslist="prettier --write ."
 ```
 
+### Run ESLint and check which rules take the longest
+
+```shell
+eslint_with_timing() {
+    TIMING=1 npm run lint $1
+}
+```
+
 ### List browsers which are supported by your project (needs a [browerslist](https://github.com/browserslist/browserslist) file)
 
 ```shell
@@ -261,7 +269,6 @@ alias jest-watch="npx jest --watch"
 open_jest_coverage_report() {
     open ./coverage/lcov-report/index.html
 }
-
 ```
 
 ## TypeScript
