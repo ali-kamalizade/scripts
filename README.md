@@ -210,7 +210,7 @@ alias browserslist="prettier --write ."
 
 ```shell
 eslint_with_timing() {
-    TIMING=1 npm run lint $1
+    TIMING=1 eslint $1
 }
 ```
 
